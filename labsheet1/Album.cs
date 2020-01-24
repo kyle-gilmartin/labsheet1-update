@@ -10,7 +10,9 @@ namespace labsheet1
 
         public override string ToString()
         {
-            return $"{Name}\n {Sales}\n{ReleaseDate.ToShortDateString()}";
+            return $"Name : {Name}\nSales : {Sales}\nReleaseDate : {ReleaseDate.ToShortDateString()}";
         }
+
+
     }
 }

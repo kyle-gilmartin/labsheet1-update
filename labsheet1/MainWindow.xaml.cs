@@ -31,7 +31,7 @@ namespace labsheet1
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            ComboBox.ItemsSource = new string[] { "Rap", "Pop", "Dance" };
+            ComboBox.ItemsSource = new string[] {"All" ,"Rap", "Pop", "Dance" };
 
 
             Band e1 = new Band.Rap()
@@ -47,7 +47,7 @@ namespace labsheet1
             {
                 Year = new DateTime(2019, 6, 30),
                 BandName = "Post Malone",
-                Members = "Poat Malone"
+                Members = "Post Malone"
              
 
             };
@@ -61,15 +61,15 @@ namespace labsheet1
             var e4 = new Band.Dance()
             {
                 Year = new DateTime(2019, 6, 30),
-                BandName = "Meduza",
-                Members = "Meduza"
+                BandName = "Blonde",
+                Members = "Blonde"
 
             };
             var e5 = new Band.Rap()
             {
                 Year = new DateTime(2019, 6, 30),
-                BandName = "XxxTentacion",
-                Members = "XxxTentacion"
+                BandName = "Roddy Ricch",
+                Members = "Roddy Ricch"
 
             };
             var e6 = new Band.Rap()
@@ -90,38 +90,77 @@ namespace labsheet1
 
 
             Album a1 = new Album()
-            { Name = "Random text1",
-              ReleaseDate = new DateTime(2020, 9, 10),
-              Sales = 10
+            {   Name = "Highest in the room",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 10000
             };
             Album a2 = new Album()
-            {   Name = "Random text2",
-                ReleaseDate = new DateTime(2010, 14, 16),
-                Sales = 130
+            {   Name = "Sicko mode",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 13000
             };
 
             Album a3 = new Album()
-            {   Name = "Random text4",
-                ReleaseDate = new DateTime(2019, 7, 19),
-                Sales = 180
+            {   Name = "Goodbyes",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 18000
             };
 
             Album a4 = new Album()
-            {   Name = "Random text6",
-                ReleaseDate = new DateTime(2016, 4, 13),
-                Sales = 400
+            {   Name = "Sunflower",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 40000
             };
+            Album a5 = new Album()
+            {
+                Name = "Piece of your heart",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 80000
+            };
+            Album a6 = new Album()
+            {
+                Name = "I loved you",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 19000
+            };
+            Album a7 = new Album()
+            {
+                Name = "The box",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 40000
+            };
+            Album a8 = new Album()
+            {
+                Name = "Kill me",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 30400
+            };
+            Album a9 = new Album()
+            {
+                Name = "Cold",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 10000
+            };
+            Album a10 = new Album()
+            {
+                Name = "Happening",
+                ReleaseDate = new DateTime(2019, 6, 30),
+                Sales = 70000
+            };
+
+
+
 
             e1.Albums.Add(a1);
             e1.Albums.Add(a2);
             e2.Albums.Add(a3);
-            e2.Albums.Add(a1);
-            e3.Albums.Add(a1);
-            e3.Albums.Add(a1);
-            e4.Albums.Add(a2);
-            e4.Albums.Add(a1);
-            e5.Albums.Add(a4);
-            e6.Albums.Add(a3);
+            e2.Albums.Add(a4);
+            e3.Albums.Add(a5);
+            e4.Albums.Add(a6);
+            e5.Albums.Add(a7);
+            e6.Albums.Add(a8);
+            e6.Albums.Add(a9);
+            e6.Albums.Add(a10);
 
 
 
