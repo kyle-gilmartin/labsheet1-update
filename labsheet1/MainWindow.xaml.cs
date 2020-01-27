@@ -39,7 +39,6 @@ namespace labsheet1
                 Year = new DateTime(2019, 6, 30),
                 BandName = "Travis scott",
                 Members = "Travis scott"
-               
                 
 
             };
@@ -171,15 +170,36 @@ namespace labsheet1
         // Singers - left list box
         private void Left_textBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Band selectedActivity = Left_textBox.SelectedItem as Band;
+            Band selectedBand = Left_textBox.SelectedItem as Band;
+
 
             //make sure it's not null
-            if (selectedActivity != null)
+            if (selectedBand != null)
             {
-                label_year.Content = selectedActivity.GetDetails1();
-                label_members.Content = selectedActivity.GetDetails2();
-                Right_TextBox.ItemsSource = selectedActivity.Albums;
+                label_year.Content = selectedBand.GetDetails1();
+                label_members.Content = selectedBand.GetDetails2();
+                Right_TextBox.ItemsSource = selectedBand.Albums;
 
+            }
+
+
+            if (selectedBand != null)
+            {
+                switch (selectedBand.BandName)
+                {
+                    case selectedBand.BandName:
+                        Band.Dance;
+                        break;
+                    case selectedBand.BandName:
+                        Band.Rap;
+                        break;
+                    case selectedBand.BandName:
+                        Band.Pop;
+                        break;
+
+                        // coundnt get the combox box to work
+
+                }
             }
         }
 
